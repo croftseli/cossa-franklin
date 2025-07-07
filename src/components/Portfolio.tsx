@@ -4,64 +4,42 @@ import { X, ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 const Portfolio = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
-  // Placeholder images from Pexels - using embroidery/textile related images
+  // Real portfolio items using the provided images
   const portfolioItems = [
     {
       id: 1,
-      title: 'Custom Wedding Monogram',
-      category: 'Wedding',
-      image: 'https://images.pexels.com/photos/6069066/pexels-photo-6069066.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Elegant monogram design for wedding ceremony and reception decor.',
+      title: 'Custom Name Embroidery - Adeline',
+      category: 'Personal',
+      image: '/WhatsApp Image 2025-07-07 at 15.12.03 (1).jpeg',
+      description: 'Beautiful custom name embroidery with decorative stitching and color gradients.',
     },
     {
       id: 2,
-      title: 'Corporate Logo Embroidery',
-      category: 'Corporate',
-      image: 'https://images.pexels.com/photos/7658355/pexels-photo-7658355.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Professional logo embroidery for company uniforms and promotional items.',
+      title: 'Anime Character Design',
+      category: 'Custom Art',
+      image: '/WhatsApp Image 2025-07-07 at 15.12.03 (2).jpeg',
+      description: 'Detailed anime character embroidery on apparel with precise line work.',
     },
-    
     {
       id: 3,
-      title: 'Floral Design Collection',
-      category: 'Decorative',
-      image: 'https://images.pexels.com/photos/6621183/pexels-photo-6621183.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Beautiful floral patterns for home decor and personal accessories.',
+      title: 'Baby Onesie - Darling with Puppy',
+      category: 'Baby Items',
+      image: '/WhatsApp Image 2025-07-07 at 15.12.03.jpeg',
+      description: 'Adorable baby onesie featuring custom puppy design with name embroidery.',
     },
     {
       id: 4,
-      title: 'Memorial Tribute Piece',
-      category: 'Memorial',
-      image: 'https://images.pexels.com/photos/8111809/pexels-photo-8111809.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Heartfelt memorial embroidery honoring a loved one\'s memory.',
+      title: 'Personalized Baby Bibs Set',
+      category: 'Baby Items',
+      image: '/WhatsApp Image 2025-07-07 at 15.12.04 (1).jpeg',
+      description: 'Set of custom embroidered baby bibs with "Cora" name in different colors.',
     },
     {
       id: 5,
-      title: 'Personal Monogram Set',
-      category: 'Personal',
-      image: 'https://images.pexels.com/photos/6069439/pexels-photo-6069439.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Personalized monograms for towels, linens, and accessories.',
-    },
-    {
-      id: 6,
-      title: 'Vintage-Style Logo',
-      category: 'Corporate',
-      image: 'https://images.pexels.com/photos/7989737/pexels-photo-7989737.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Vintage-inspired logo design with traditional embroidery techniques.',
-    },
-    {
-      id: 7,
-      title: 'Holiday Decoration Set',
-      category: 'Seasonal',
-      image: 'https://images.pexels.com/photos/6069132/pexels-photo-6069132.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Festive holiday embroidery designs for seasonal decorations.',
-    },
-    {
-      id: 8,
-      title: 'Custom Pet Portrait',
-      category: 'Personal',
-      image: 'https://images.pexels.com/photos/7989628/pexels-photo-7989628.jpeg?auto=compress&cs=tinysrgb&w=800',
-      description: 'Detailed pet portrait embroidery capturing beloved companions.',
+      title: 'MAMA Sweatshirt with Bow',
+      category: 'Apparel',
+      image: '/WhatsApp Image 2025-07-07 at 15.12.04 (2).jpeg',
+      description: 'Stylish "MAMA" embroidery on gray sweatshirt with decorative pink bow accent.',
     },
   ];
 
