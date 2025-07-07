@@ -70,7 +70,7 @@ const Home = () => {
         </div>
         
         {/* Decorative elements */}
-        <div className="absolute top-20 left-4 sm:left-10 opacity-20" aria-hidden="true">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-20 pointer-events-none" aria-hidden="true">
           <Star className="h-16 w-16 text-plumeria-500 animate-float" />
         </div>
         <div className="absolute bottom-20 right-4 sm:right-10 opacity-20" aria-hidden="true">
