@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Improve focus visibility for accessibility */
+@layer base {
+  *:focus {
+    outline: 2px solid theme('colors.brown.500');
+    outline-offset: 2px;
+  }
+  
+  /* Ensure text remains readable during font loading */
+  body {
+    font-display: swap;
+  }
+  
+  /* Smooth scrolling for better UX */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Improve image loading */
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+}

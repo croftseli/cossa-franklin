@@ -119,26 +119,26 @@ const Portfolio = () => {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-accent-50 via-cream to-brown-50 pt-32 pb-20">
+      <section className="bg-gradient-to-br from-accent-50 via-cream to-brown-50 pt-24 sm:pt-32 pb-12 sm:pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-serif font-bold text-brown-800 mb-6 animate-slide-up">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-brown-800 mb-4 sm:mb-6 animate-slide-up">
             Our Portfolio
           </h1>
-          <p className="text-xl md:text-2xl text-brown-700 leading-relaxed animate-slide-up">
+          <p className="text-lg sm:text-xl md:text-2xl text-brown-700 leading-relaxed animate-slide-up px-4">
             A showcase of our custom embroidery work and artistic craftsmanship
           </p>
         </div>
       </section>
 
       {/* Filter Navigation */}
-      <section className="py-12 bg-white border-b border-brown-200">
+      <section className="py-8 sm:py-12 bg-white border-b border-brown-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+                className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${
                   selectedCategory === category
                     ? 'bg-brown-700 text-cream shadow-lg'
                     : 'bg-brown-100 text-brown-700 hover:bg-brown-200 hover:text-brown-800'
@@ -152,15 +152,24 @@ const Portfolio = () => {
       </section>
 
       {/* Portfolio Grid */}
-      <section className="py-20 bg-cream">
+      <section className="py-12 sm:py-16 lg:py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {filteredItems.map((item, index) => (
               <div
                 key={item.id}
                 className="group cursor-pointer animate-scale-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
                 onClick={() => openLightbox(index)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    openLightbox(index);
+                  }
+                }}
+                aria-label={`View ${item.title} in detail`}
               >
                 <div className="relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform group-hover:scale-105 border border-brown-100">
                   <div className="aspect-square overflow-hidden">
@@ -168,12 +177,13 @@ const Portfolio = () => {
                       src={item.image}
                       alt={item.alt}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      loading="lazy"
                     />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-brown-900/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                      <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                      <p className="text-sm opacity-90">{item.description}</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-brown-900/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" aria-hidden="true">
+                    <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white">
+                      <h3 className="text-lg sm:text-xl font-semibold mb-2">{item.title}</h3>
+                      <p className="text-xs sm:text-sm opacity-90">{item.description}</p>
                       <div className="flex items-center mt-3">
                         <span className="text-xs bg-white/20 px-3 py-1 rounded-full">
                           {item.category}
@@ -191,11 +201,18 @@ const Portfolio = () => {
 
       {/* Lightbox */}
       {selectedImage !== null && (
-        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 animate-fade-in">
-          <div className="relative max-w-4xl max-h-full">
+        <div 
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 animate-fade-in"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="lightbox-title"
+          onClick={closeLightbox}
+        >
+          <div className="relative max-w-4xl max-h-full" onClick={(e) => e.stopPropagation()}>
             <button
               onClick={closeLightbox}
-              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors duration-200"
+              className="absolute -top-8 sm:-top-12 right-0 text-white hover:text-gray-300 transition-colors duration-200 p-2"
+              aria-label="Close image viewer"
             >
               <X className="h-8 w-8" />
             </button>
@@ -204,13 +221,13 @@ const Portfolio = () => {
               <img
                 src={filteredItems[selectedImage].image}
                 alt={filteredItems[selectedImage].alt}
-                className="w-full h-auto max-h-[70vh] object-contain"
+                className="w-full h-auto max-h-[60vh] sm:max-h-[70vh] object-contain"
               />
-              <div className="p-6">
-                <h3 className="text-2xl font-serif font-bold text-brown-800 mb-2">
+              <div className="p-4 sm:p-6">
+                <h3 id="lightbox-title" className="text-xl sm:text-2xl font-serif font-bold text-brown-800 mb-2">
                   {filteredItems[selectedImage].title}
                 </h3>
-                <p className="text-brown-600 mb-3">
+                <p className="text-sm sm:text-base text-brown-600 mb-3">
                   {filteredItems[selectedImage].description}
                 </p>
                 <span className="inline-block bg-brown-100 text-brown-700 px-3 py-1 rounded-full text-sm font-medium">
@@ -222,13 +239,15 @@ const Portfolio = () => {
             {/* Navigation buttons */}
             <button
               onClick={() => navigateImage('prev')}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full transition-all duration-200"
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white p-2 sm:p-3 rounded-full transition-all duration-200"
+              aria-label="Previous image"
             >
               <ChevronLeft className="h-6 w-6" />
             </button>
             <button
               onClick={() => navigateImage('next')}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white p-3 rounded-full transition-all duration-200"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white p-2 sm:p-3 rounded-full transition-all duration-200"
+              aria-label="Next image"
             >
               <ChevronRight className="h-6 w-6" />
             </button>
