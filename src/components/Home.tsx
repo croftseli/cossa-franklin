@@ -28,12 +28,12 @@ const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-brown-900/5 to-brown-800/10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative" role="banner">
           <div className="text-center animate-slide-up">
-            <div className="flex justify-center mb-6 sm:mb-8">
+            <div className="flex justify-center items-center mb-6 sm:mb-8">
               <div className="relative">
                 <img 
                   src="/Cossa Main_2.jpeg" 
                   alt="Cossa Custom Embroidery Logo - Premium embroidery services in Franklin Tennessee" 
-                  className="h-24 sm:h-32 w-auto object-contain animate-float shadow-2xl rounded-lg"
+                  className="h-28 sm:h-36 w-auto object-contain object-center animate-float shadow-2xl rounded-lg mx-auto"
                   itemProp="logo"
                 />
               </div>
