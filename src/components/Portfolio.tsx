@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { X, ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 
 const Portfolio = () => {
@@ -10,7 +10,7 @@ const Portfolio = () => {
       id: 1,
       title: 'Custom Name Embroidery - Adeline',
       category: 'Personal',
-      image: '/custom-name-embroidery-adeline.jpeg',
+      image: '/custom-name-embroidery-adeline.webp',
       description: 'Beautiful custom name embroidery with decorative stitching and color gradients.',
       alt: 'Custom embroidered name Adeline on white fabric with pink and brown thread colors'
     },
@@ -18,7 +18,7 @@ const Portfolio = () => {
       id: 2,
       title: 'Anime Character Design',
       category: 'Custom Art',
-      image: '/anime-character-embroidery-sweatshirt.jpeg',
+      image: '/anime-character-embroidery-sweatshirt.webp',
       description: 'Detailed anime character embroidery on apparel with precise line work.',
       alt: 'Anime character embroidery design on white sweatshirt featuring detailed black line art'
     },
@@ -26,7 +26,7 @@ const Portfolio = () => {
       id: 3,
       title: 'Baby Onesie - Darling with Puppy',
       category: 'Baby Items',
-      image: '/baby-onesie-darling-puppy-embroidery.jpeg',
+      image: '/baby-onesie-darling-puppy-embroidery.webp',
       description: 'Adorable baby onesie featuring custom puppy design with name embroidery.',
       alt: 'White baby onesie with embroidered puppy design and Darling name in pink and brown thread'
     },
@@ -34,7 +34,7 @@ const Portfolio = () => {
       id: 4,
       title: 'Personalized Baby Bibs Set',
       category: 'Baby Items',
-      image: '/personalized-baby-bibs-cora-embroidery.jpeg',
+      image: '/personalized-baby-bibs-cora-embroidery.webp',
       description: 'Set of custom embroidered baby bibs with "Cora" name in different colors.',
       alt: 'Three baby bibs in mint green, pink, and yellow with Cora name embroidered in matching colors'
     },
@@ -42,7 +42,7 @@ const Portfolio = () => {
       id: 5,
       title: 'MAMA Sweatshirt with Bow',
       category: 'Apparel',
-      image: '/mama-sweatshirt-bow-embroidery.jpeg',
+      image: '/mama-sweatshirt-bow-embroidery.webp',
       description: 'Stylish "MAMA" embroidery on gray sweatshirt with decorative pink bow accent.',
       alt: 'Gray sweatshirt with pink MAMA embroidery featuring decorative bow design underneath'
     },
@@ -50,7 +50,7 @@ const Portfolio = () => {
       id: 6,
       title: 'Patchwork Heart Hoodie',
       category: 'Apparel',
-      image: '/patchwork-heart-hoodie-embroidery.jpeg',
+      image: '/patchwork-heart-hoodie-embroidery.webp',
       description: 'Creative patchwork heart design with mixed fabric patterns and colors.',
       alt: 'Gray hoodie with large patchwork heart embroidery in pink, purple, and patterned fabrics'
     },
@@ -58,7 +58,7 @@ const Portfolio = () => {
       id: 7,
       title: 'Good Night My Love Pillowcase',
       category: 'Home Decor',
-      image: '/good-night-my-love-pillowcase-embroidery.jpeg',
+      image: '/good-night-my-love-pillowcase-embroidery.webp',
       description: 'Romantic embroidered pillowcase with elegant script lettering.',
       alt: 'White pillowcase with Good Night My Love embroidered in red script lettering'
     },
@@ -66,7 +66,7 @@ const Portfolio = () => {
       id: 8,
       title: 'DARLIN Name Embroidery',
       category: 'Personal',
-      image: '/darlin-name-embroidery-sweatshirt.jpeg',
+      image: '/darlin-name-embroidery-sweatshirt.webp',
       description: 'Bold letter embroidery with varied textures and colors for each letter.',
       alt: 'Gray sweatshirt with DARLIN embroidered in different colored and textured letters'
     },
@@ -74,7 +74,7 @@ const Portfolio = () => {
       id: 9,
       title: 'WORLD Baby Onesie',
       category: 'Baby Items',
-      image: '/world-baby-onesie-embroidery.jpeg',
+      image: '/world-baby-onesie-embroidery.webp',
       description: 'Cute baby onesie with "WORLD" embroidery in earth-tone colors.',
       alt: 'White baby onesie with WORLD embroidered in green and brown letters'
     },
@@ -82,7 +82,7 @@ const Portfolio = () => {
       id: 10,
       title: 'Nathaniel Tractor Design (In Progress)',
       category: 'Custom Art',
-      image: '/nathaniel-tractor-embroidery-in-progress.jpeg',
+      image: '/nathaniel-tractor-embroidery-in-progress.webp',
       description: 'Work-in-progress shot of custom tractor embroidery with name.',
       alt: 'Embroidery hoop showing green and yellow tractor design with Nathaniel name being stitched'
     },
@@ -91,8 +91,8 @@ const Portfolio = () => {
   const categories = ['All', ...Array.from(new Set(portfolioItems.map(item => item.category)))];
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const filteredItems = selectedCategory === 'All' 
-    ? portfolioItems 
+  const filteredItems = selectedCategory === 'All'
+    ? portfolioItems
     : portfolioItems.filter(item => item.category === selectedCategory);
 
   const openLightbox = (index: number) => {
@@ -105,10 +105,10 @@ const Portfolio = () => {
 
   const navigateImage = (direction: 'prev' | 'next') => {
     if (selectedImage === null) return;
-    
+
     const currentIndex = selectedImage;
     const maxIndex = filteredItems.length - 1;
-    
+
     if (direction === 'prev') {
       setSelectedImage(currentIndex === 0 ? maxIndex : currentIndex - 1);
     } else {
@@ -138,11 +138,10 @@ const Portfolio = () => {
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${
-                  selectedCategory === category
-                    ? 'bg-brown-700 text-cream shadow-lg'
-                    : 'bg-brown-100 text-brown-700 hover:bg-brown-200 hover:text-brown-800'
-                }`}
+                className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${selectedCategory === category
+                  ? 'bg-brown-700 text-cream shadow-lg'
+                  : 'bg-brown-100 text-brown-700 hover:bg-brown-200 hover:text-brown-800'
+                  }`}
               >
                 {category}
               </button>
@@ -201,7 +200,7 @@ const Portfolio = () => {
 
       {/* Lightbox */}
       {selectedImage !== null && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 animate-fade-in"
           role="dialog"
           aria-modal="true"
@@ -216,7 +215,7 @@ const Portfolio = () => {
             >
               <X className="h-8 w-8" />
             </button>
-            
+
             <div className="relative bg-white rounded-lg overflow-hidden">
               <img
                 src={filteredItems[selectedImage].image}

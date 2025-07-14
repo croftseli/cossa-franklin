@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
@@ -22,9 +22,9 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 sm:space-x-4 group" aria-label="Cossa Custom Embroidery Home">
             <div className="relative">
-              <img 
-                src="/lone C.jpeg" 
-                alt="Cossa Custom Embroidery Logo" 
+              <img
+                src="/cossa-simple-logo.webp"
+                alt="Cossa Custom Embroidery Logo"
                 className="h-10 sm:h-12 w-10 sm:w-12 object-contain rounded-full shadow-md group-hover:shadow-lg transition-all duration-300"
               />
             </div>
@@ -40,11 +40,10 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-3 lg:px-4 py-2 rounded-lg font-medium transition-all duration-300 text-sm lg:text-base ${
-                  isActive(item.path)
-                    ? 'text-brown-800 bg-brown-100 shadow-sm'
-                    : 'text-brown-700 hover:text-brown-800 hover:bg-brown-50'
-                }`}
+                className={`px-3 lg:px-4 py-2 rounded-lg font-medium transition-all duration-300 text-sm lg:text-base ${isActive(item.path)
+                  ? 'text-brown-800 bg-brown-100 shadow-sm'
+                  : 'text-brown-700 hover:text-brown-800 hover:bg-brown-50'
+                  }`}
                 aria-current={isActive(item.path) ? 'page' : undefined}
               >
                 {item.label}
@@ -75,11 +74,10 @@ const Navigation = () => {
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block px-3 py-3 rounded-lg font-medium transition-all duration-300 ${
-                    isActive(item.path)
-                      ? 'text-brown-800 bg-brown-100'
-                      : 'text-brown-700 hover:text-brown-800 hover:bg-brown-50'
-                  }`}
+                  className={`block px-3 py-3 rounded-lg font-medium transition-all duration-300 ${isActive(item.path)
+                    ? 'text-brown-800 bg-brown-100'
+                    : 'text-brown-700 hover:text-brown-800 hover:bg-brown-50'
+                    }`}
                   aria-current={isActive(item.path) ? 'page' : undefined}
                 >
                   {item.label}

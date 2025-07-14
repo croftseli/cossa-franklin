@@ -1,11 +1,10 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Star, Heart, Award } from 'lucide-react';
 
 const Home = () => {
   const features = [
     {
-      icon: <img src="/lone C.jpeg" alt="Custom" className="h-8 w-8 rounded-full object-cover" />,
+      icon: <img src="/cossa-simple-logo.webp" alt="Custom" className="h-8 w-8 rounded-full object-cover" />,
       title: 'Custom Designs',
       description: 'Every piece is uniquely crafted to your specifications with passion and precision',
     },
@@ -30,9 +29,9 @@ const Home = () => {
           <div className="text-center animate-slide-up">
             <div className="flex justify-center items-center mb-6 sm:mb-8">
               <div className="relative">
-                <img 
-                  src="/Cossa Main_2.jpeg" 
-                  alt="Cossa Custom Embroidery Logo - Premium embroidery services in Franklin Tennessee" 
+                <img
+                  src="/cossa-main-logo.webp"
+                  alt="Cossa Custom Embroidery Logo - Premium embroidery services in Franklin Tennessee"
                   className="h-28 sm:h-36 w-auto object-contain object-center animate-float shadow-2xl rounded-lg mx-auto"
                   itemProp="logo"
                 />
@@ -45,8 +44,8 @@ const Home = () => {
               </span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-brown-700 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-4" itemProp="description">
-              Bringing your vision to life through the timeless art of embroidery. 
-              Based in Franklin, Tennessee, we create beautiful, personalized pieces 
+              Bringing your vision to life through the timeless art of embroidery.
+              Based in Franklin, Tennessee, we create beautiful, personalized pieces
               that tell your story with passion and precision.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
@@ -68,7 +67,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Decorative elements */}
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-20 pointer-events-none" aria-hidden="true">
           <Star className="h-16 w-16 text-plumeria-500 animate-float" />
@@ -86,11 +85,11 @@ const Home = () => {
               Why Choose Cossa?
             </h2>
             <p className="text-lg sm:text-xl text-brown-600 max-w-2xl mx-auto px-4">
-              We combine traditional craftsmanship with modern techniques to create 
+              We combine traditional craftsmanship with modern techniques to create
               embroidery that exceeds expectations and captures your unique story.
             </p>
           </div>
-          
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {features.map((feature, index) => (
               <div
@@ -121,7 +120,7 @@ const Home = () => {
             Ready to Create Something Beautiful?
           </h2>
           <p className="text-lg sm:text-xl text-cream/90 mb-6 sm:mb-8 leading-relaxed">
-            Let's discuss your custom embroidery project. Every piece tells a story – 
+            Let's discuss your custom embroidery project. Every piece tells a story –
             what's yours? From wedding keepsakes to corporate branding, we bring passion to every stitch.
           </p>
           <Link
@@ -134,7 +133,7 @@ const Home = () => {
           </Link>
         </div>
       </section>
-      
+
       {/* Hidden structured data */}
       <div style={{ display: 'none' }}>
         <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">

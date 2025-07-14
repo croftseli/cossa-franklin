@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Clock, Users, ArrowRight } from 'lucide-react';
 
@@ -27,27 +26,27 @@ const About = () => {
               </h2>
               <div className="space-y-4 sm:space-y-6 text-base sm:text-lg text-brown-700 leading-relaxed">
                 <p>
-                  Based in the charming town of Franklin, Tennessee, Cossa was born 
-                  from a passion for creating beautiful, personalized embroidery that 
-                  tells your unique story. We believe that every thread has the power 
+                  Based in the charming town of Franklin, Tennessee, Cossa was born
+                  from a passion for creating beautiful, personalized embroidery that
+                  tells your unique story. We believe that every thread has the power
                   to transform ordinary items into extraordinary keepsakes.
                 </p>
                 <p>
-                  Our approach is simple: we listen to your vision, understand your 
-                  needs, and craft custom embroidery that exceeds your expectations. 
-                  Whether it's a corporate logo, wedding gift, or personal memento, 
-                  we treat every project with the same dedication to quality and 
+                  Our approach is simple: we listen to your vision, understand your
+                  needs, and craft custom embroidery that exceeds your expectations.
+                  Whether it's a corporate logo, wedding gift, or personal memento,
+                  we treat every project with the same dedication to quality and
                   attention to detail.
                 </p>
                 <p>
-                  What sets us apart is our commitment to custom, made-to-order work. 
-                  We don't believe in one-size-fits-all solutions. Every piece is 
-                  carefully designed and meticulously crafted to reflect your individual 
+                  What sets us apart is our commitment to custom, made-to-order work.
+                  We don't believe in one-size-fits-all solutions. Every piece is
+                  carefully designed and meticulously crafted to reflect your individual
                   style and requirements, bringing passion to every stitch.
                 </p>
               </div>
             </div>
-            
+
             <div className="bg-gradient-to-br from-brown-50 to-accent-50 rounded-3xl p-6 sm:p-8 animate-scale-in border border-brown-100 mt-8 lg:mt-0">
               <div className="space-y-6 sm:space-y-8">
                 <div className="flex items-start space-x-4">
@@ -59,12 +58,12 @@ const About = () => {
                       Franklin, Tennessee
                     </h3>
                     <p className="text-sm sm:text-base text-brown-600">
-                      Proudly serving Middle Tennessee and beyond with exceptional 
+                      Proudly serving Middle Tennessee and beyond with exceptional
                       custom embroidery services.
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="p-3 bg-plumeria-600 rounded-full">
                     <Clock className="h-6 w-6 text-cream" />
@@ -74,12 +73,12 @@ const About = () => {
                       Made-to-Order
                     </h3>
                     <p className="text-sm sm:text-base text-brown-600">
-                      Every piece is custom crafted specifically for you. No mass 
+                      Every piece is custom crafted specifically for you. No mass
                       production, just personalized attention to detail.
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <div className="p-3 bg-accent-600 rounded-full">
                     <Users className="h-6 w-6 text-cream" />
@@ -89,7 +88,7 @@ const About = () => {
                       Personal Service
                     </h3>
                     <p className="text-sm sm:text-base text-brown-600">
-                      We work closely with each client to ensure your vision becomes 
+                      We work closely with each client to ensure your vision becomes
                       a beautiful reality.
                     </p>
                   </div>
@@ -108,12 +107,12 @@ const About = () => {
               What We Do
             </h2>
             <p className="text-lg sm:text-xl text-brown-600 max-w-3xl mx-auto leading-relaxed px-4">
-              Since every project is custom, we don't have a fixed price sheet. 
-              Instead, we work with you to understand your needs and provide 
+              Since every project is custom, we don't have a fixed price sheet.
+              Instead, we work with you to understand your needs and provide
               personalized pricing that reflects the scope and complexity of your vision.
             </p>
           </div>
-          
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
               'Corporate Logos & Branding',
@@ -150,7 +149,7 @@ const About = () => {
             Let's Bring Your Vision to Life
           </h2>
           <p className="text-lg sm:text-xl text-cream/90 mb-6 sm:mb-8 leading-relaxed">
-            Browse our portfolio to see examples of our work, or contact us to 
+            Browse our portfolio to see examples of our work, or contact us to
             discuss your custom embroidery project and get a personalized quote.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
