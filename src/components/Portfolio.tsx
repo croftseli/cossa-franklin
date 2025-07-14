@@ -88,6 +88,8 @@ const Portfolio = () => {
     },
   ];
 
+  // Extract unique categories from portfolio items
+
   const categories = ['All', ...Array.from(new Set(portfolioItems.map(item => item.category)))];
   const [selectedCategory, setSelectedCategory] = useState('All');
 
