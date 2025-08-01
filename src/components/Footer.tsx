@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -73,15 +73,7 @@ const Footer = () => {
                   Middle Tennessee
                 </div>
               </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-plumeria-400 flex-shrink-0" />
-                <a
-                  href="tel:+16155552677"
-                  className="text-sm sm:text-base text-brown-200 hover:text-cream transition-colors duration-200"
-                >
-                  (615) 555-2677
-                </a>
-              </div>
+
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-plumeria-400 flex-shrink-0" />
                 <a
