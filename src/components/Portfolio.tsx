@@ -136,10 +136,10 @@ const Portfolio = () => {
     },
     {
       id: 17,
-      title: 'Precious Baby Embroidery Art',
+      title: 'Rhylan with Winnie, Tigger, and Friends Bib',
       category: 'Baby Items',
       image: '/custom-embroidery-4.jpg',
-      description: 'Exquisite baby embroidery art that combines beauty and functionality. Perfect for creating lasting memories with your little one!',
+      description: 'One of our cutest pieces, custom made for baby Rhylan',
       alt: 'Precious baby item featuring artistic embroidery design'
     },
     {
