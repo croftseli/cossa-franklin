@@ -88,7 +88,7 @@ const Portfolio = () => {
     },
     {
       id: 11,
-      title: 'Adorable Baby Bib Collection',
+      title: 'Adorable Baby Bib',
       category: 'Baby Items',
       image: '/baby-bib-premium.jpg',
       description: 'Charming custom embroidered baby bib with delicate stitching and vibrant colors. Perfect for keeping little ones clean while looking absolutely adorable!',
@@ -96,7 +96,7 @@ const Portfolio = () => {
     },
     {
       id: 12,
-      title: 'Premium Baby Bib Design',
+      title: 'Beautiful Baby Bib Trio',
       category: 'Baby Items',
       image: '/baby-bib-adorable.jpg',
       description: 'Beautifully crafted baby bib featuring intricate embroidery work. Made with love and attention to detail for your precious little one!',
