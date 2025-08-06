@@ -24,6 +24,15 @@ const Home = () => {
     <div className="animate-fade-in" itemScope itemType="https://schema.org/LocalBusiness">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-cream via-brown-50 to-accent-50 pt-20 pb-16 sm:pb-24 lg:pb-32 overflow-hidden">
+        {/* Hero Background Image */}
+        <div className="absolute inset-0 opacity-10">
+          <img
+            src="/nathaniel-tractor-embroidery-in-progress.webp"
+            alt=""
+            className="w-full h-full object-cover object-center"
+            aria-hidden="true"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-r from-brown-900/5 to-brown-800/10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative" role="banner">
           <div className="text-center animate-slide-up">

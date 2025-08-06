@@ -16,10 +16,10 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: 'Anime Character Design',
+      title: 'Gojo Custom Sweatshirt Design',
       category: 'Apparel',
       image: '/anime-character-embroidery-sweatshirt.webp',
-      description: 'Detailed anime character embroidery on apparel with precise line work.',
+      description: 'Detailed anime character Gojo Satoru from Jujutsu Kaisen on a white sweatshirt. Fine, precise line work!',
       alt: 'Anime character embroidery design on white sweatshirt featuring detailed black line art'
     },
     {
@@ -80,10 +80,10 @@ const Portfolio = () => {
     },
     {
       id: 10,
-      title: 'Nathaniel Tractor Design (In Progress)',
+      title: 'Nathaniel Tractor Design',
       category: 'Baby Items',
       image: '/nathaniel-tractor-embroidery-in-progress.webp',
-      description: 'Work-in-progress shot of custom tractor embroidery with name.',
+      description: 'Custom tractor embroidery with name.',
       alt: 'Embroidery hoop showing green and yellow tractor design with Nathaniel name being stitched'
     },
   ];
