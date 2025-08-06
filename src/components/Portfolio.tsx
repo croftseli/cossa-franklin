@@ -112,10 +112,10 @@ const Portfolio = () => {
     },
     {
       id: 14,
-      title: 'Custom Baby Embroidery Design',
+      title: 'Mateo, Custom Winnie the Pooh Bib',
       category: 'Baby Items',
       image: '/custom-embroidery-1.jpg',
-      description: 'Beautiful custom embroidery design perfect for baby items. Crafted with love and attention to detail for your precious little one!',
+      description: 'Beautiful, sweet little Bib for baby Mateo. Made to order with love.',
       alt: 'Custom embroidery design for baby items with colorful thread work'
     },
     {
