@@ -9,7 +9,7 @@ const Portfolio = () => {
     {
       id: 1,
       title: 'Custom Name Embroidery - Adeline',
-      category: 'Baby Items',
+      category: 'Baby Bibs',
       image: '/custom-name-embroidery-adeline.webp',
       description: 'Beautiful custom name embroidery with decorative stitching and color gradients.',
       alt: 'Custom embroidered name Adeline on white fabric with pink and brown thread colors'
@@ -25,7 +25,7 @@ const Portfolio = () => {
     {
       id: 3,
       title: 'Baby Onesie - Darling with Puppy',
-      category: 'Baby Items',
+      category: 'Baby Bibs',
       image: '/baby-onesie-darling-puppy-embroidery.webp',
       description: 'Adorable baby onesie featuring custom puppy design with name embroidery.',
       alt: 'White baby onesie with embroidered puppy design and Darling name in pink and brown thread'
@@ -33,7 +33,7 @@ const Portfolio = () => {
     {
       id: 4,
       title: 'Personalized Baby Bibs Set',
-      category: 'Baby Items',
+      category: 'Baby Bibs',
       image: '/personalized-baby-bibs-cora-embroidery.webp',
       description: 'Set of custom embroidered baby bibs with "Cora" name in different colors.',
       alt: 'Three baby bibs in mint green, pink, and yellow with Cora name embroidered in matching colors'
@@ -73,7 +73,7 @@ const Portfolio = () => {
     {
       id: 9,
       title: 'WORLD Baby Onesie',
-      category: 'Baby Items',
+      category: 'Baby Bibs',
       image: '/world-baby-onesie-embroidery.webp',
       description: 'Cute baby onesie with "WORLD" embroidery in earth-tone colors.',
       alt: 'White baby onesie with WORLD embroidered in green and brown letters'
@@ -81,7 +81,7 @@ const Portfolio = () => {
     {
       id: 10,
       title: 'Nathaniel Tractor Design',
-      category: 'Baby Items',
+      category: 'Baby Bibs',
       image: '/nathaniel-tractor-embroidery-in-progress.webp',
       description: 'Custom tractor embroidery with name.',
       alt: 'Embroidery hoop showing green and yellow tractor design with Nathaniel name being stitched'
@@ -89,7 +89,7 @@ const Portfolio = () => {
     {
       id: 11,
       title: 'Adorable Baby Bib',
-      category: 'Baby Items',
+      category: 'Baby Bibs',
       image: '/adorable-baby-bib.jpg',
       description: 'Charming custom embroidered baby bib with delicate stitching and vibrant colors. Perfect for keeping little ones clean while looking absolutely adorable!',
       alt: 'Custom embroidered baby bib with colorful thread work and decorative design'
@@ -97,7 +97,7 @@ const Portfolio = () => {
     {
       id: 12,
       title: 'Beautiful Baby Bib Trio',
-      category: 'Baby Items',
+      category: 'Baby Bibs',
       image: '/beautiful-baby-bib-trio.jpg',
       description: 'Beautifully crafted baby bib featuring intricate embroidery work. Made with love and attention to detail for your precious little one!',
       alt: 'Premium baby bib with detailed embroidery work and quality craftsmanship'
@@ -105,7 +105,7 @@ const Portfolio = () => {
     {
       id: 13,
       title: 'Sweet Baby Bib Creation',
-      category: 'Baby Items',
+      category: 'Baby Bibs',
       image: '/baby-bib-sweet.jpg',
       description: 'Delightful baby bib showcasing our signature embroidery style. Soft, comfortable, and designed to make mealtime both practical and stylish!',
       alt: 'Sweet baby bib with signature embroidery design in soft colors'
@@ -113,7 +113,7 @@ const Portfolio = () => {
     {
       id: 14,
       title: 'Mateo, Custom Winnie the Pooh Bib',
-      category: 'Baby Items',
+      category: 'Baby Bibs',
       image: '/custom-embroidery-1.jpg',
       description: 'Beautiful, sweet little Bib for baby Mateo. Made to order with love.',
       alt: 'Custom embroidery design for baby items with colorful thread work'
@@ -121,7 +121,7 @@ const Portfolio = () => {
     {
       id: 15,
       title: 'Hunter Baby Blue Bib',
-      category: 'Baby Items',
+      category: 'Baby Bibs',
       image: '/custom-embroidery-2.jpg',
       description: 'A sweet little baby blue bib custom made with love for baby Hunter',
       alt: 'Adorable baby item with custom embroidery in bright colors'
@@ -129,7 +129,7 @@ const Portfolio = () => {
     {
       id: 16,
       title: 'Sweet Baby Embroidery Creation',
-      category: 'Baby Items',
+      category: 'Baby Bibs',
       image: '/custom-embroidery-3.jpg',
       description: 'Delightful baby embroidery showcasing our signature craftsmanship. Soft, comfortable, and designed to make every moment special!',
       alt: 'Sweet baby item with detailed embroidery work and quality stitching'
@@ -137,7 +137,7 @@ const Portfolio = () => {
     {
       id: 17,
       title: 'Rhylan with Winnie, Tigger, and Friends Bib',
-      category: 'Baby Items',
+      category: 'Baby Bibs',
       image: '/custom-embroidery-4.jpg',
       description: 'One of our cutest pieces, custom made for baby Rhylan',
       alt: 'Precious baby item featuring artistic embroidery design'
@@ -145,7 +145,7 @@ const Portfolio = () => {
     {
       id: 18,
       title: 'Little Bib for Baby Elowen',
-      category: 'Baby Items',
+      category: 'Baby Bibs',
       image: '/custom-embroidery-5.jpg',
       description: 'A sweet bib for a sweet girl, baby Elowen! Simple and cute.',
       alt: 'Sweet baby bib with simple and cute embroidery design for baby Elowen'
