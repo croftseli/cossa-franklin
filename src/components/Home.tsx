@@ -1,7 +1,27 @@
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import { ArrowRight, Star, Heart, Award } from 'lucide-react';
 
 const Home = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  const heroImages = [
+    '/baby-items/7EEB4DE7-343C-4FC4-BE2B-360DAAC0328E.jpeg',
+    '/baby-items/A73E3A7F-96D9-43C0-A4A6-B0D71C96490F.jpeg',
+    '/baby-items/9A856F99-1FF4-4ABE-9D84-044E9353AE84_1_105_c.jpeg',
+    '/baby-items/15E78A53-BA1B-49F1-B232-A896EB79FD71_1_105_c.jpeg',
+    '/baby-items/FC6C8683-B394-484E-8709-A08B7294B506.jpeg'
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 4000); // Change image every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
   const features = [
     {
       icon: <img src="/cossa-simple-logo.webp" alt="Custom" className="h-8 w-8 rounded-full object-cover" />,
@@ -25,15 +45,37 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-cream via-brown-50 to-accent-50 pt-20 pb-16 sm:pb-24 lg:pb-32 overflow-hidden">
         {/* Hero Background Image */}
-        <div className="absolute inset-0 opacity-10">
-          <img
-            src="/nathaniel-tractor-embroidery-in-progress.webp"
-            alt=""
-            className="w-full h-full object-cover object-center"
-            aria-hidden="true"
-          />
+        <div className="absolute inset-0 opacity-15">
+          {heroImages.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt=""
+              className={`absolute w-full h-full object-cover object-center transition-opacity duration-1000 ${
+                index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+              }`}
+              aria-hidden="true"
+            />
+          ))}
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-brown-900/5 to-brown-800/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-brown-900/10 to-brown-800/15"></div>
+        
+        {/* Image indicators */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+          {heroImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentImageIndex(index)}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                index === currentImageIndex 
+                  ? 'bg-brown-700 w-6' 
+                  : 'bg-brown-400 hover:bg-brown-600'
+              }`}
+              aria-label={`View image ${index + 1}`}
+            />
+          ))}
+        </div>
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative" role="banner">
           <div className="text-center animate-slide-up">
             <div className="flex justify-center items-center mb-6 sm:mb-8">
@@ -46,13 +88,13 @@ const Home = () => {
                 />
               </div>
             </div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-brown-800 mb-4 sm:mb-6" itemProp="name">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-brown-800 mb-4 sm:mb-6 drop-shadow-sm" itemProp="name">
               <span itemProp="name">Cossa</span>
               <span className="block text-xl sm:text-2xl md:text-3xl text-plumeria-600 mt-2 font-normal italic">
                 Passion To Live
               </span>
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-brown-700 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-4" itemProp="description">
+            <p className="text-lg sm:text-xl md:text-2xl text-brown-700 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-4 drop-shadow-sm" itemProp="description">
               Bringing your vision to life through the timeless art of embroidery.
               Based in Franklin, Tennessee, we create beautiful, personalized pieces
               that tell your story with passion and precision.
