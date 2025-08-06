@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 sm:space-x-4 mb-4 sm:mb-6">
               <div className="relative">
                 <img
-                  src="/cossa-simple-logo.webp"
+                  src="/cossa-logo-simple.webp"
                   alt="Cossa Custom Embroidery Logo"
                   className="h-10 sm:h-12 w-10 sm:w-12 object-contain rounded-full shadow-md"
                 />

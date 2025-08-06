@@ -4,7 +4,7 @@ import { ArrowRight, Star, Heart, Award } from 'lucide-react';
 const Home = () => {
   const features = [
     {
-      icon: <img src="/cossa-simple-logo.webp" alt="Custom" className="h-8 w-8 rounded-full object-cover" />,
+      icon: <img src="/cossa-logo-simple.webp" alt="Custom" className="h-8 w-8 rounded-full object-cover" />,
       title: 'Custom Designs',
       description: 'Every piece is uniquely crafted to your specifications with passion and precision',
     },
