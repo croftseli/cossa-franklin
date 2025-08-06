@@ -188,10 +188,10 @@ const Portfolio = () => {
       <section className="bg-gradient-to-br from-accent-50 via-cream to-brown-50 pt-24 sm:pt-32 pb-12 sm:pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-brown-800 mb-4 sm:mb-6 animate-slide-up">
-            Our Portfolio
+            Portfolio Showcase
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-brown-700 leading-relaxed animate-slide-up px-4">
-            A showcase of our custom embroidery work and artistic craftsmanship
+            Samples of our custom embroidery work and artistic craftsmanship!
           </p>
         </div>
       </section>
