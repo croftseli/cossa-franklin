@@ -110,6 +110,46 @@ const Portfolio = () => {
       description: 'Delightful baby bib showcasing our signature embroidery style. Soft, comfortable, and designed to make mealtime both practical and stylish!',
       alt: 'Sweet baby bib with signature embroidery design in soft colors'
     },
+    {
+      id: 14,
+      title: 'Custom Baby Embroidery Design',
+      category: 'Baby Items',
+      image: '/custom-embroidery-1.jpg',
+      description: 'Beautiful custom embroidery design perfect for baby items. Crafted with love and attention to detail for your precious little one!',
+      alt: 'Custom embroidery design for baby items with colorful thread work'
+    },
+    {
+      id: 15,
+      title: 'Adorable Baby Item Embroidery',
+      category: 'Baby Items',
+      image: '/custom-embroidery-2.jpg',
+      description: 'Charming embroidered baby item featuring delicate stitching and vibrant colors. Made to bring joy and style to your baby\'s wardrobe!',
+      alt: 'Adorable baby item with custom embroidery in bright colors'
+    },
+    {
+      id: 16,
+      title: 'Sweet Baby Embroidery Creation',
+      category: 'Baby Items',
+      image: '/custom-embroidery-3.jpg',
+      description: 'Delightful baby embroidery showcasing our signature craftsmanship. Soft, comfortable, and designed to make every moment special!',
+      alt: 'Sweet baby item with detailed embroidery work and quality stitching'
+    },
+    {
+      id: 17,
+      title: 'Precious Baby Embroidery Art',
+      category: 'Baby Items',
+      image: '/custom-embroidery-4.jpg',
+      description: 'Exquisite baby embroidery art that combines beauty and functionality. Perfect for creating lasting memories with your little one!',
+      alt: 'Precious baby item featuring artistic embroidery design'
+    },
+    {
+      id: 18,
+      title: 'Lovely Baby Embroidery Piece',
+      category: 'Baby Items',
+      image: '/custom-embroidery-5.jpg',
+      description: 'Lovely embroidered baby piece showcasing intricate detail work. Made with passion and precision to celebrate your baby\'s special moments!',
+      alt: 'Lovely baby item with intricate embroidery detail and premium craftsmanship'
+    },
   ];
 
   // Extract unique categories from portfolio items
