@@ -120,10 +120,10 @@ const Portfolio = () => {
     },
     {
       id: 15,
-      title: 'Adorable Baby Item Embroidery',
+      title: 'Hunter Baby Blue Bib',
       category: 'Baby Items',
       image: '/custom-embroidery-2.jpg',
-      description: 'Charming embroidered baby item featuring delicate stitching and vibrant colors. Made to bring joy and style to your baby\'s wardrobe!',
+      description: 'A sweet little baby blue bib custom made with love for baby Hunter',
       alt: 'Adorable baby item with custom embroidery in bright colors'
     },
     {
