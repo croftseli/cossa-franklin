@@ -90,7 +90,7 @@ const Portfolio = () => {
       id: 11,
       title: 'Adorable Baby Bib',
       category: 'Baby Items',
-      image: '/baby-bib-premium.jpg',
+      image: '/adorable-baby-bib.jpg',
       description: 'Charming custom embroidered baby bib with delicate stitching and vibrant colors. Perfect for keeping little ones clean while looking absolutely adorable!',
       alt: 'Custom embroidered baby bib with colorful thread work and decorative design'
     },
@@ -98,7 +98,7 @@ const Portfolio = () => {
       id: 12,
       title: 'Beautiful Baby Bib Trio',
       category: 'Baby Items',
-      image: '/baby-bib-adorable.jpg',
+      image: '/beautiful-baby-bib-trio.jpg',
       description: 'Beautifully crafted baby bib featuring intricate embroidery work. Made with love and attention to detail for your precious little one!',
       alt: 'Premium baby bib with detailed embroidery work and quality craftsmanship'
     },
