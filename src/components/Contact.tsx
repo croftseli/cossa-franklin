@@ -47,8 +47,8 @@ const Contact = () => {
                     <div>
                       <h3 className="text-lg sm:text-xl font-semibold text-brown-800 mb-2">Email</h3>
                       <p className="text-sm sm:text-base text-brown-600">
-                        <a href="mailto:info@cossaembroidery.com" className="hover:text-brown-800 transition-colors duration-200">
-                          info@cossaembroidery.com
+                        <a href="mailto:Cossaembroidery@gmail.com" className="hover:text-brown-800 transition-colors duration-200">
+                          Cossaembroidery@gmail.com
                         </a>
                       </p>
                     </div>
