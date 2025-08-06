@@ -16,14 +16,6 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: 'Gojo Custom Sweatshirt Design',
-      category: 'Apparel',
-      image: '/anime-character-embroidery-sweatshirt.webp',
-      description: 'Detailed anime character Gojo Satoru from Jujutsu Kaisen on a white sweatshirt. Fine, precise line work!',
-      alt: 'Anime character embroidery design on white sweatshirt featuring detailed black line art'
-    },
-    {
-      id: 3,
       title: 'Baby Onesie - Darling with Puppy',
       category: 'Baby Bibs',
       image: '/baby-onesie-darling-puppy-embroidery.webp',
@@ -31,7 +23,7 @@ const Portfolio = () => {
       alt: 'White baby onesie with embroidered puppy design and Darling name in pink and brown thread'
     },
     {
-      id: 4,
+      id: 3,
       title: 'Personalized Baby Bibs Set',
       category: 'Baby Bibs',
       image: '/personalized-baby-bibs-cora-embroidery.webp',
@@ -39,39 +31,7 @@ const Portfolio = () => {
       alt: 'Three baby bibs in mint green, pink, and yellow with Cora name embroidered in matching colors'
     },
     {
-      id: 5,
-      title: 'MAMA Sweatshirt with Bow',
-      category: 'Apparel',
-      image: '/mama-sweatshirt-bow-embroidery.webp',
-      description: 'Stylish "MAMA" embroidery on gray sweatshirt with decorative pink bow accent.',
-      alt: 'Gray sweatshirt with pink MAMA embroidery featuring decorative bow design underneath'
-    },
-    {
-      id: 6,
-      title: 'Patchwork Heart Hoodie',
-      category: 'Apparel',
-      image: '/patchwork-heart-hoodie-embroidery.webp',
-      description: 'Creative patchwork heart design with mixed fabric patterns and colors.',
-      alt: 'Gray hoodie with large patchwork heart embroidery in pink, purple, and patterned fabrics'
-    },
-    {
-      id: 7,
-      title: 'Good Night My Love Pillowcase',
-      category: 'Home Decor',
-      image: '/good-night-my-love-pillowcase-embroidery.webp',
-      description: 'Romantic embroidered pillowcase with elegant script lettering.',
-      alt: 'White pillowcase with Good Night My Love embroidered in red script lettering'
-    },
-    {
-      id: 8,
-      title: 'DARLIN Name Embroidery',
-      category: 'Apparel',
-      image: '/darlin-name-embroidery-sweatshirt.webp',
-      description: 'Bold letter embroidery with varied textures and colors for each letter.',
-      alt: 'Gray sweatshirt with DARLIN embroidered in different colored and textured letters'
-    },
-    {
-      id: 9,
+      id: 4,
       title: 'WORLD Baby Onesie',
       category: 'Baby Bibs',
       image: '/world-baby-onesie-embroidery.webp',
@@ -79,7 +39,7 @@ const Portfolio = () => {
       alt: 'White baby onesie with WORLD embroidered in green and brown letters'
     },
     {
-      id: 10,
+      id: 5,
       title: 'Nathaniel Tractor Design',
       category: 'Baby Bibs',
       image: '/nathaniel-tractor-embroidery-in-progress.webp',
@@ -87,7 +47,7 @@ const Portfolio = () => {
       alt: 'Embroidery hoop showing green and yellow tractor design with Nathaniel name being stitched'
     },
     {
-      id: 11,
+      id: 6,
       title: 'Adorable Baby Bib',
       category: 'Baby Bibs',
       image: '/adorable-baby-bib.jpg',
@@ -95,7 +55,7 @@ const Portfolio = () => {
       alt: 'Custom embroidered baby bib with colorful thread work and decorative design'
     },
     {
-      id: 12,
+      id: 7,
       title: 'Beautiful Baby Bib Trio',
       category: 'Baby Bibs',
       image: '/beautiful-baby-bib-trio.jpg',
@@ -103,7 +63,7 @@ const Portfolio = () => {
       alt: 'Premium baby bib with detailed embroidery work and quality craftsmanship'
     },
     {
-      id: 13,
+      id: 8,
       title: 'Sweet Baby Bib Creation',
       category: 'Baby Bibs',
       image: '/baby-bib-sweet.jpg',
@@ -111,7 +71,7 @@ const Portfolio = () => {
       alt: 'Sweet baby bib with signature embroidery design in soft colors'
     },
     {
-      id: 14,
+      id: 9,
       title: 'Mateo, Custom Winnie the Pooh Bib',
       category: 'Baby Bibs',
       image: '/custom-embroidery-1.jpg',
@@ -119,7 +79,7 @@ const Portfolio = () => {
       alt: 'Custom embroidery design for baby items with colorful thread work'
     },
     {
-      id: 15,
+      id: 10,
       title: 'Hunter Baby Blue Bib',
       category: 'Baby Bibs',
       image: '/custom-embroidery-2.jpg',
@@ -127,7 +87,7 @@ const Portfolio = () => {
       alt: 'Adorable baby item with custom embroidery in bright colors'
     },
     {
-      id: 16,
+      id: 11,
       title: 'Sweet Baby Embroidery Creation',
       category: 'Baby Bibs',
       image: '/custom-embroidery-3.jpg',
@@ -135,7 +95,7 @@ const Portfolio = () => {
       alt: 'Sweet baby item with detailed embroidery work and quality stitching'
     },
     {
-      id: 17,
+      id: 12,
       title: 'Rhylan with Winnie, Tigger, and Friends Bib',
       category: 'Baby Bibs',
       image: '/custom-embroidery-4.jpg',
@@ -143,7 +103,7 @@ const Portfolio = () => {
       alt: 'Precious baby item featuring artistic embroidery design'
     },
     {
-      id: 18,
+      id: 13,
       title: 'Little Bib for Baby Elowen',
       category: 'Baby Bibs',
       image: '/custom-embroidery-5.jpg',
@@ -152,14 +112,8 @@ const Portfolio = () => {
     },
   ];
 
-  // Extract unique categories from portfolio items
-
-  const categories = ['All', ...Array.from(new Set(portfolioItems.map(item => item.category)))];
-  const [selectedCategory, setSelectedCategory] = useState('All');
-
-  const filteredItems = selectedCategory === 'All'
-    ? portfolioItems
-    : portfolioItems.filter(item => item.category === selectedCategory);
+  // Since we only have Baby Bibs now, we don't need filtering
+  const filteredItems = portfolioItems;
 
   const openLightbox = (index: number) => {
     setSelectedImage(index);
@@ -196,26 +150,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Filter Navigation */}
-      <section className="py-8 sm:py-12 bg-white border-b border-brown-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${selectedCategory === category
-                  ? 'bg-brown-700 text-cream shadow-lg'
-                  : 'bg-brown-100 text-brown-700 hover:bg-brown-200 hover:text-brown-800'
-                  }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Portfolio Grid */}
       <section className="py-12 sm:py-16 lg:py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -249,11 +183,8 @@ const Portfolio = () => {
                     <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white">
                       <h3 className="text-lg sm:text-xl font-semibold mb-2">{item.title}</h3>
                       <p className="text-xs sm:text-sm opacity-90">{item.description}</p>
-                      <div className="flex items-center mt-3">
-                        <span className="text-xs bg-white/20 px-3 py-1 rounded-full">
-                          {item.category}
-                        </span>
-                        <ExternalLink className="h-4 w-4 ml-auto" />
+                      <div className="flex items-center justify-end mt-3">
+                        <ExternalLink className="h-4 w-4" />
                       </div>
                     </div>
                   </div>
@@ -295,9 +226,6 @@ const Portfolio = () => {
                 <p className="text-sm sm:text-base text-brown-600 mb-3">
                   {filteredItems[selectedImage].description}
                 </p>
-                <span className="inline-block bg-brown-100 text-brown-700 px-3 py-1 rounded-full text-sm font-medium">
-                  {filteredItems[selectedImage].category}
-                </span>
               </div>
             </div>
 
