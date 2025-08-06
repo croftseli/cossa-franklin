@@ -86,6 +86,30 @@ const Portfolio = () => {
       description: 'Custom tractor embroidery with name.',
       alt: 'Embroidery hoop showing green and yellow tractor design with Nathaniel name being stitched'
     },
+    {
+      id: 11,
+      title: 'Adorable Baby Bib Collection',
+      category: 'Baby Items',
+      image: '/baby-items/294AF982-9FF6-4573-AC8C-FEF9943C897A.jpeg',
+      description: 'Charming custom embroidered baby bib with delicate stitching and vibrant colors. Perfect for keeping little ones clean while looking absolutely adorable!',
+      alt: 'Custom embroidered baby bib with colorful thread work and decorative design'
+    },
+    {
+      id: 12,
+      title: 'Premium Baby Bib Design',
+      category: 'Baby Items',
+      image: '/baby-items/514A9274-44BE-4752-9DB4-34CA48CF7DA8.jpeg',
+      description: 'Beautifully crafted baby bib featuring intricate embroidery work. Made with love and attention to detail for your precious little one!',
+      alt: 'Premium baby bib with detailed embroidery work and quality craftsmanship'
+    },
+    {
+      id: 13,
+      title: 'Sweet Baby Bib Creation',
+      category: 'Baby Items',
+      image: '/baby-items/FEDAB9EF-29B4-4EF7-9225-682500CADFD0.jpeg',
+      description: 'Delightful baby bib showcasing our signature embroidery style. Soft, comfortable, and designed to make mealtime both practical and stylish!',
+      alt: 'Sweet baby bib with signature embroidery design in soft colors'
+    },
   ];
 
   // Extract unique categories from portfolio items
