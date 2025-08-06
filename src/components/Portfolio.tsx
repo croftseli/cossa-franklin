@@ -9,7 +9,7 @@ const Portfolio = () => {
     {
       id: 1,
       title: 'Custom Name Embroidery - Adeline',
-      category: 'Personal',
+      category: 'Baby Items',
       image: '/custom-name-embroidery-adeline.webp',
       description: 'Beautiful custom name embroidery with decorative stitching and color gradients.',
       alt: 'Custom embroidered name Adeline on white fabric with pink and brown thread colors'
@@ -17,7 +17,7 @@ const Portfolio = () => {
     {
       id: 2,
       title: 'Anime Character Design',
-      category: 'Custom Art',
+      category: 'Apparel',
       image: '/anime-character-embroidery-sweatshirt.webp',
       description: 'Detailed anime character embroidery on apparel with precise line work.',
       alt: 'Anime character embroidery design on white sweatshirt featuring detailed black line art'
@@ -65,7 +65,7 @@ const Portfolio = () => {
     {
       id: 8,
       title: 'DARLIN Name Embroidery',
-      category: 'Personal',
+      category: 'Apparel',
       image: '/darlin-name-embroidery-sweatshirt.webp',
       description: 'Bold letter embroidery with varied textures and colors for each letter.',
       alt: 'Gray sweatshirt with DARLIN embroidered in different colored and textured letters'
@@ -81,7 +81,7 @@ const Portfolio = () => {
     {
       id: 10,
       title: 'Nathaniel Tractor Design (In Progress)',
-      category: 'Custom Art',
+      category: 'Baby Items',
       image: '/nathaniel-tractor-embroidery-in-progress.webp',
       description: 'Work-in-progress shot of custom tractor embroidery with name.',
       alt: 'Embroidery hoop showing green and yellow tractor design with Nathaniel name being stitched'
