@@ -27,7 +27,7 @@ const Home = () => {
         {/* Hero Background Image */}
         <div className="absolute inset-0 opacity-10">
           <img
-            src="/nathaniel-tractor-embroidery-in-progress.webp"
+            src="/nathaniel-tractor.webp"
             alt=""
             className="w-full h-full object-cover object-center"
             aria-hidden="true"
@@ -39,7 +39,7 @@ const Home = () => {
             <div className="flex justify-center items-center mb-6 sm:mb-8">
               <div className="relative">
                 <img
-                  src="/cossa-main-logo.webp"
+                  src="/cossa-logo-main.webp"
                   alt="Cossa Custom Embroidery Logo - Premium embroidery services in Franklin Tennessee"
                   className="h-28 sm:h-36 w-auto object-contain object-center animate-float shadow-2xl rounded-lg mx-auto"
                   itemProp="logo"
