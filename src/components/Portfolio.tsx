@@ -10,7 +10,7 @@ const Portfolio = () => {
       id: 1,
       title: 'Custom Name Embroidery - Adeline',
       category: 'Baby Items',
-      image: '/adeline-name.webp',
+      image: '/custom-name-embroidery-adeline.webp',
       description: 'Beautiful custom name embroidery with decorative stitching and color gradients.',
       alt: 'Custom embroidered name Adeline on white fabric with pink and brown thread colors'
     },
@@ -18,7 +18,7 @@ const Portfolio = () => {
       id: 2,
       title: 'Gojo Custom Sweatshirt Design',
       category: 'Apparel',
-      image: '/gojo-sweatshirt.webp',
+      image: '/anime-character-embroidery-sweatshirt.webp',
       description: 'Detailed anime character Gojo Satoru from Jujutsu Kaisen on a white sweatshirt. Fine, precise line work!',
       alt: 'Anime character embroidery design on white sweatshirt featuring detailed black line art'
     },
@@ -26,7 +26,7 @@ const Portfolio = () => {
       id: 3,
       title: 'Baby Onesie - Darling with Puppy',
       category: 'Baby Items',
-      image: '/darling-puppy-onesie.webp',
+      image: '/baby-onesie-darling-puppy-embroidery.webp',
       description: 'Adorable baby onesie featuring custom puppy design with name embroidery.',
       alt: 'White baby onesie with embroidered puppy design and Darling name in pink and brown thread'
     },
@@ -34,7 +34,7 @@ const Portfolio = () => {
       id: 4,
       title: 'Personalized Baby Bibs Set',
       category: 'Baby Items',
-      image: '/cora-bibs-set.webp',
+      image: '/personalized-baby-bibs-cora-embroidery.webp',
       description: 'Set of custom embroidered baby bibs with "Cora" name in different colors.',
       alt: 'Three baby bibs in mint green, pink, and yellow with Cora name embroidered in matching colors'
     },
@@ -42,7 +42,7 @@ const Portfolio = () => {
       id: 5,
       title: 'MAMA Sweatshirt with Bow',
       category: 'Apparel',
-      image: '/mama-bow-sweatshirt.webp',
+      image: '/mama-sweatshirt-bow-embroidery.webp',
       description: 'Stylish "MAMA" embroidery on gray sweatshirt with decorative pink bow accent.',
       alt: 'Gray sweatshirt with pink MAMA embroidery featuring decorative bow design underneath'
     },
@@ -50,7 +50,7 @@ const Portfolio = () => {
       id: 6,
       title: 'Patchwork Heart Hoodie',
       category: 'Apparel',
-      image: '/patchwork-heart-hoodie.webp',
+      image: '/patchwork-heart-hoodie-embroidery.webp',
       description: 'Creative patchwork heart design with mixed fabric patterns and colors.',
       alt: 'Gray hoodie with large patchwork heart embroidery in pink, purple, and patterned fabrics'
     },
@@ -58,7 +58,7 @@ const Portfolio = () => {
       id: 7,
       title: 'Good Night My Love Pillowcase',
       category: 'Home Decor',
-      image: '/goodnight-pillowcase.webp',
+      image: '/good-night-my-love-pillowcase-embroidery.webp',
       description: 'Romantic embroidered pillowcase with elegant script lettering.',
       alt: 'White pillowcase with Good Night My Love embroidered in red script lettering'
     },
@@ -66,7 +66,7 @@ const Portfolio = () => {
       id: 8,
       title: 'DARLIN Name Embroidery',
       category: 'Apparel',
-      image: '/darlin-sweatshirt.webp',
+      image: '/darlin-name-embroidery-sweatshirt.webp',
       description: 'Bold letter embroidery with varied textures and colors for each letter.',
       alt: 'Gray sweatshirt with DARLIN embroidered in different colored and textured letters'
     },
@@ -74,7 +74,7 @@ const Portfolio = () => {
       id: 9,
       title: 'WORLD Baby Onesie',
       category: 'Baby Items',
-      image: '/world-onesie.webp',
+      image: '/world-baby-onesie-embroidery.webp',
       description: 'Cute baby onesie with "WORLD" embroidery in earth-tone colors.',
       alt: 'White baby onesie with WORLD embroidered in green and brown letters'
     },
@@ -82,31 +82,31 @@ const Portfolio = () => {
       id: 10,
       title: 'Nathaniel Tractor Design',
       category: 'Baby Items',
-      image: '/nathaniel-tractor.webp',
+      image: '/nathaniel-tractor-embroidery-in-progress.webp',
       description: 'Custom tractor embroidery with name.',
       alt: 'Embroidery hoop showing green and yellow tractor design with Nathaniel name being stitched'
     },
     {
       id: 11,
-      title: 'Premium Baby Bib Design',
+      title: 'Adorable Baby Bib Collection',
       category: 'Baby Items',
-      image: '/baby-bib-premium.jpg',
-      description: 'Beautifully crafted baby bib featuring intricate embroidery work. Made with love and attention to detail for your precious little one!',
-      alt: 'Premium baby bib with detailed embroidery work and quality craftsmanship'
+      image: '/baby-items/294AF982-9FF6-4573-AC8C-FEF9943C897A.jpeg',
+      description: 'Charming custom embroidered baby bib with delicate stitching and vibrant colors. Perfect for keeping little ones clean while looking absolutely adorable!',
+      alt: 'Custom embroidered baby bib with colorful thread work and decorative design'
     },
     {
       id: 12,
-      title: 'Adorable Baby Bib Collection',
+      title: 'Premium Baby Bib Design',
       category: 'Baby Items',
-      image: '/baby-bib-adorable.jpg',
-      description: 'Charming custom embroidered baby bib with delicate stitching and vibrant colors. Perfect for keeping little ones clean while looking absolutely adorable!',
-      alt: 'Custom embroidered baby bib with colorful thread work and decorative design'
+      image: '/baby-items/514A9274-44BE-4752-9DB4-34CA48CF7DA8.jpeg',
+      description: 'Beautifully crafted baby bib featuring intricate embroidery work. Made with love and attention to detail for your precious little one!',
+      alt: 'Premium baby bib with detailed embroidery work and quality craftsmanship'
     },
     {
       id: 13,
       title: 'Sweet Baby Bib Creation',
       category: 'Baby Items',
-      image: '/baby-bib-sweet.jpg',
+      image: '/baby-items/FEDAB9EF-29B4-4EF7-9225-682500CADFD0.jpeg',
       description: 'Delightful baby bib showcasing our signature embroidery style. Soft, comfortable, and designed to make mealtime both practical and stylish!',
       alt: 'Sweet baby bib with signature embroidery design in soft colors'
     },

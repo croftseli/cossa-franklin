@@ -23,7 +23,7 @@ const Navigation = () => {
           <Link to="/" className="flex items-center space-x-2 sm:space-x-4 group" aria-label="Cossa Custom Embroidery Home">
             <div className="relative">
               <img
-                src="/cossa-logo-simple.webp"
+                src="/cossa-simple-logo.webp"
                 alt="Cossa Custom Embroidery Logo"
                 className="h-10 sm:h-12 w-10 sm:w-12 object-contain rounded-full shadow-md group-hover:shadow-lg transition-all duration-300"
               />

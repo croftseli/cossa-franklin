@@ -4,7 +4,7 @@ import { ArrowRight, Star, Heart, Award } from 'lucide-react';
 const Home = () => {
   const features = [
     {
-      icon: <img src="/cossa-logo-simple.webp" alt="Custom" className="h-8 w-8 rounded-full object-cover" />,
+      icon: <img src="/cossa-simple-logo.webp" alt="Custom" className="h-8 w-8 rounded-full object-cover" />,
       title: 'Custom Designs',
       description: 'Every piece is uniquely crafted to your specifications with passion and precision',
     },
@@ -27,7 +27,7 @@ const Home = () => {
         {/* Hero Background Image */}
         <div className="absolute inset-0 opacity-10">
           <img
-            src="/nathaniel-tractor.webp"
+            src="/nathaniel-tractor-embroidery-in-progress.webp"
             alt=""
             className="w-full h-full object-cover object-center"
             aria-hidden="true"
@@ -39,7 +39,7 @@ const Home = () => {
             <div className="flex justify-center items-center mb-6 sm:mb-8">
               <div className="relative">
                 <img
-                  src="/cossa-logo-main.webp"
+                  src="/cossa-main-logo.webp"
                   alt="Cossa Custom Embroidery Logo - Premium embroidery services in Franklin Tennessee"
                   className="h-28 sm:h-36 w-auto object-contain object-center animate-float shadow-2xl rounded-lg mx-auto"
                   itemProp="logo"
