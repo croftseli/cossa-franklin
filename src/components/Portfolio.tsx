@@ -144,11 +144,11 @@ const Portfolio = () => {
     },
     {
       id: 18,
-      title: 'Lovely Baby Embroidery Piece',
+      title: 'Little Bib for Baby Elowen',
       category: 'Baby Items',
       image: '/custom-embroidery-5.jpg',
-      description: 'Lovely embroidered baby piece showcasing intricate detail work. Made with passion and precision to celebrate your baby\'s special moments!',
-      alt: 'Lovely baby item with intricate embroidery detail and premium craftsmanship'
+      description: 'A sweet bib for a sweet girl, baby Elowen! Simple and cute.',
+      alt: 'Sweet baby bib with simple and cute embroidery design for baby Elowen'
     },
   ];
 
