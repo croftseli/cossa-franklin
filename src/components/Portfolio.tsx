@@ -110,6 +110,78 @@ const Portfolio = () => {
       description: 'A sweet bib for a sweet girl, baby Elowen! Simple and cute.',
       alt: 'Sweet baby bib with simple and cute embroidery design for baby Elowen'
     },
+    {
+      id: 14,
+      title: 'Blue Ron Jon Baby Overalls Set',
+      category: 'Baby Bibs',
+      image: '/baby-items/BlueRonJonBabyOveralls1.jpeg',
+      description: 'Adorable blue Ron Jon baby overalls with custom embroidery. Perfect for little beach lovers with quality stitching and attention to detail.',
+      alt: 'Blue Ron Jon baby overalls with custom embroidery work'
+    },
+    {
+      id: 15,
+      title: 'Blue Ron Jon Baby Overalls - Detail View',
+      category: 'Baby Bibs',
+      image: '/baby-items/BlueRonJonBabyOveralls2.jpeg',
+      description: 'Close-up detail of the beautiful embroidery work on blue Ron Jon baby overalls, showcasing our precision and craftsmanship.',
+      alt: 'Detailed view of embroidery on blue Ron Jon baby overalls'
+    },
+    {
+      id: 16,
+      title: 'Blue Ron Jon Baby Overalls - Complete Set',
+      category: 'Baby Bibs',
+      image: '/baby-items/BlueRonJonBabyOveralls3.jpeg',
+      description: 'Complete view of the custom embroidered blue Ron Jon baby overalls, perfect for your little one\'s beach adventures.',
+      alt: 'Complete set of blue Ron Jon baby overalls with custom embroidery'
+    },
+    {
+      id: 17,
+      title: 'Custom Baby Onesie Design',
+      category: 'Baby Bibs',
+      image: '/baby-items/15E78A53-BA1B-49F1-B232-A896EB79FD71_1_105_c.jpeg',
+      description: 'Beautiful custom baby onesie with personalized embroidery design. Made with love and attention to detail for your precious little one.',
+      alt: 'Custom embroidered baby onesie with personalized design'
+    },
+    {
+      id: 18,
+      title: 'Sweet Baby Embroidery Creation',
+      category: 'Baby Bibs',
+      image: '/baby-items/7EEB4DE7-343C-4FC4-BE2B-360DAAC0328E.jpeg',
+      description: 'Charming baby item featuring our signature embroidery style. Soft, comfortable, and designed to make every moment special.',
+      alt: 'Sweet baby item with signature embroidery design'
+    },
+    {
+      id: 19,
+      title: 'Adorable Baby Piece',
+      category: 'Baby Bibs',
+      image: '/baby-items/9A856F99-1FF4-4ABE-9D84-044E9353AE84_1_105_c.jpeg',
+      description: 'Delightful baby embroidery showcasing our expert craftsmanship. Perfect for keeping your little one comfortable and stylish.',
+      alt: 'Adorable baby item with expert embroidery craftsmanship'
+    },
+    {
+      id: 20,
+      title: 'Premium Baby Embroidery',
+      category: 'Baby Bibs',
+      image: '/baby-items/A73E3A7F-96D9-43C0-A4A6-B0D71C96490F.jpeg',
+      description: 'Premium quality baby embroidery with intricate details and vibrant colors. Made to last and cherish for years to come.',
+      alt: 'Premium baby embroidery with intricate details and vibrant colors'
+    },
+    {
+      id: 21,
+      title: 'Custom Baby Item with Love',
+      category: 'Baby Bibs',
+      image: '/baby-items/FC6C8683-B394-484E-8709-A08B7294B506.jpeg',
+      description: 'Beautiful custom baby item crafted with love and passion. Features our signature embroidery work that makes each piece unique.',
+      alt: 'Custom baby item with signature embroidery work crafted with love'
+    },
+    {
+      id: 22,
+      title: 'Special Baby Embroidery Design',
+      category: 'Baby Bibs',
+      image: '/baby-items/FEDAB9EF-29B4-4EF7-9225-682500CADFD0.jpeg',
+      description: 'Special baby embroidery design featuring unique patterns and careful attention to detail. Perfect for making memories that last.',
+      alt: 'Special baby embroidery design with unique patterns and careful detail work'
+    },
   ];
 
   // Since we only have Baby Bibs now, we don't need filtering
