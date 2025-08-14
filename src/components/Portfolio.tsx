@@ -174,14 +174,6 @@ const Portfolio = () => {
       description: 'Beautiful custom baby item crafted with love and passion. Features our signature embroidery work that makes each piece unique.',
       alt: 'Custom baby item with signature embroidery work crafted with love'
     },
-    {
-      id: 22,
-      title: 'Special Baby Embroidery Design',
-      category: 'Baby Bibs',
-      image: '/baby-items/FEDAB9EF-29B4-4EF7-9225-682500CADFD0.jpeg',
-      description: 'Special baby embroidery design featuring unique patterns and careful attention to detail. Perfect for making memories that last.',
-      alt: 'Special baby embroidery design with unique patterns and careful detail work'
-    },
   ];
 
   // Since we only have Baby Bibs now, we don't need filtering
